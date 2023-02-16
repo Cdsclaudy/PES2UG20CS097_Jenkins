@@ -15,6 +15,7 @@ pipeline  {
     }
     stage('Deploy'){
       steps{
+        sh 'g++ bye.cpp'
         echo 'Deployment done'
       }
     }
