@@ -17,6 +17,7 @@ pipeline  {
       steps{
         echo 'Deployment done'
       }
+    }
   }
   post {
     failure {
