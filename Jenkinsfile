@@ -9,10 +9,14 @@ pipeline  {
     }
     stage('Test'){
       steps {
-        sh '/var/jenkins_home/workspace/PES2UG20CS097-1/main/hello_exec'
+        sh './hello_exec'
         echo 'Test Stage Successful'
       }
     }
+    stage('Deploy'){
+      steps{
+        echo 'Deployment done'
+      }
   }
   post {
     failure {
